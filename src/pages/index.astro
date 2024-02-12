@@ -19,38 +19,12 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <HorizontalCard
-    title="VaporHUB"
+    title="Donut"
     img="/projects/vaporhub.jpg"
-    desc="13-17 Discord Server"
-    url="https://discord.gg/XHv3HU89"
-    badge="NEW"
+    desc="SPINNING D O N U T"
+    url="https://nick9088.github.io/Donut"
+    badge="Fun"
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-  title="BurgerCloud"
-  img="/projects/burgercloud.jpg"
-  desc="NextCloud instance under my domain"
-  url="https://cloud.bnet.nick909.dev"
-  badge="PRIVATE"
-/>
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
